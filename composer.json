@@ -1,0 +1,24 @@
+{
+    "name": "arcfly/insight-ai",
+    "authors": [
+      {
+        "name": "arcfly.design",
+        "email": "admin@insixus.com"
+      }
+    ],
+    "require": {
+      "symfony/http-foundation": "^5.1",
+      "illuminate/collections": "8.*",
+      "ext-json": "*",
+      "nesbot/carbon": "^2.45"
+    },
+    "license": "GPL-3.0",
+    "autoload": {
+      "psr-4": {
+        "App\\": "./app"
+      },
+      "files": [
+        "utils/INAI_helpers.php"
+      ]
+    }
+  }

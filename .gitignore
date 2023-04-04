@@ -1,0 +1,7 @@
+# ignore ALL files in ANY directory named temp
+node_modules/
+vendor/
+
+# ignore ALL .log files
+composer.lock
+package-lock.json

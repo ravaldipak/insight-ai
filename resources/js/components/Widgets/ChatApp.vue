@@ -2,6 +2,11 @@
 	<div>
 		<vue-advanced-chat
 			height="calc(100vh - 20px)"
+			show-search=false
+			show-add-room=false
+			show-files=false
+			show-audio=false
+			rooms-list-opened=false
 			:current-user-id="currentUserId"
 			:rooms="JSON.stringify(rooms)"
 			:rooms-loaded="true"

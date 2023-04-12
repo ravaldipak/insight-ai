@@ -17,7 +17,7 @@ mix.js('resources/js/app.js', 'assets/js/app.min.js')
     .sass('resources/sass/app.scss', 'assets/css/app.min.css');
 
 mix.js('resources/js/front-app.js', 'assets/js/front-app.min.js')
-    // .sass('resources/sass/front-app.scss', 'assets/css/front-app.min.css');
+    .sass('resources/sass/front-app.scss', 'assets/css/front-app.min.css');
 
 mix.autoload({
     jquery: ['$', 'window.jQuery', 'jQuery', 'jquery']

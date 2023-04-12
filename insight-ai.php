@@ -13,6 +13,7 @@
 use App\baseClasses\INAIActivate;
 use App\baseClasses\INAIDeactivate;
 use App\baseClasses\INAIBase;
+use App\baseClasses\INAIAdmin;
 defined( 'ABSPATH' ) or die( 'Something went wrong' );
 
 // Require once the Composer Autoload
@@ -63,3 +64,4 @@ register_activation_hook( __FILE__, [ INAIActivate::class, 'activate'] );
 register_deactivation_hook( __FILE__, [INAIDeactivate::class, 'deActivate'] );
 
 (new INAIBase());
+// (new INAIAdmin());

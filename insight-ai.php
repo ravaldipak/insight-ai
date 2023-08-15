@@ -5,15 +5,15 @@
  * Description: Chat GPT
  * Version:1.0.0
  * Author: ArcFly
- * Text Domain: kc-lang
+ * Text Domain: insight-ai
  * Domain Path: /languages
  * Author URI: https://insixus.com
  **/
 
-use App\baseClasses\INAIActivate;
-use App\baseClasses\INAIDeactivate;
-use App\baseClasses\INAIBase;
-use App\baseClasses\INAIAdmin;
+use App\InsightAi\INAIActivate;
+use App\InsightAi\INAIDeactivate;
+use App\InsightAi\INAIBase;
+use App\InsightAi\INAIAdmin;
 defined( 'ABSPATH' ) or die( 'Something went wrong' );
 
 // Require once the Composer Autoload

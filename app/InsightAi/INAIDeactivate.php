@@ -3,6 +3,8 @@
 
 namespace App\InsightAi;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly    
+
 class INAIDeactivate{
 
 

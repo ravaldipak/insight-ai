@@ -3,6 +3,8 @@
 
 namespace App\InsightAi;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly    
+
 class INAIBase{
 
     public $plugin_url;
@@ -54,7 +56,7 @@ class INAIBase{
         // echo $site_title;
         // print_r(INAIGetPermission('dashboard'));
         // die();
-		add_menu_page( __($site_title), 'InsightAI' , INAIGetPermission('dashboard') , 'dashboard/', [$this, 'adminDashboard'],  $this->plugin_url . 'assets/images/dashboard-icon.png' , 99);
+		add_menu_page( __($site_title),'insight-ai', 'InsightAI' , INAIGetPermission('dashboard') , 'dashboard/', [$this, 'adminDashboard'],  $this->plugin_url . 'assets/images/dashboard-icon.png' , 99);
     }
 
     public function enqueueFrontScripts(){
@@ -77,9 +79,9 @@ class INAIBase{
         $dir_name = $prefix .'lang';
         $user_dirname = $upload_dir['baseurl'] . '/' . $dir_name;
 
-        echo _e('<meta name="pluginBASEURL" content="' . $this->plugin_url .'" />');
-        echo _e('<meta name="pluginPREFIX" content="' . $this->getPluginPrefix() .'" />');
-        echo _e('<meta name="pluginMediaPath" content="' .$user_dirname  .'" />');
+        echo esc_html('<meta name="pluginBASEURL" content="' . $this->plugin_url .'" />','insight-ai');
+        echo esc_html('<meta name="pluginPREFIX" content="' . $this->getPluginPrefix() .'" />,','insight-ai');
+        echo esc_html('<meta name="pluginMediaPath" content="' .$user_dirname  .'" />','insight-ai');
 	}
 
     public function enqueueScripts(){

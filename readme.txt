@@ -19,6 +19,9 @@ The AI Engine utilizes the API from [OpenAI](https://beta.openai.com). This plug
 == Chat App ==
 The Vue Advanced Chat is library to use Emojis on chat app. For more information refer [Documentation](https://www.npmjs.com/package/vue-advanced-chat).
 
+== Calling files remotely ==
+The Emojies CDN.The usage shown in the plugin's settings is just for reference. It is important to check your usage on the [Vue Advanced Chat](https://www.npmjs.com/package/vue-advanced-chat) for accurate information. The Emojies are use for emotions on chat and it's installed by automatically from Vue Advanced Chat.
+
 #### Shortcode:
 You can use this shortcode to display Chat : [insight-ai-chat-gpt]
 
